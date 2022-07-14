@@ -71,7 +71,7 @@
             </div>
         </div>
         <div id="busca-avancada-container" style="display:none;">
-            <form id="busca-avancada-form" action="buscaAvancada.html">
+            <form id="busca-avancada-form" action="buscaavancada.html">
                 <p>Busca avançada</p>
                 <div class="row">
                     <div class="col">
@@ -319,7 +319,7 @@
         }
 
         const getRecursos = async () => {
-            const data = await fetch(`${BASE_URL}/planosDeAula/buscaSimples/${pag}/${titulo}`)
+            const data = await fetch(`${BASE_URL}/planosDeAula/buscasimples/${pag}/${titulo}`)
                 .then((res) => res.json())
                 .catch(e => console.log(e));
 
