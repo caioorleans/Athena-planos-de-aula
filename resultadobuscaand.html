@@ -1,0 +1,248 @@
+<html>
+
+<head>
+	<title>Aplicativos para android</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/gif" href="img/ico.gif">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/resultadobuscapc.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+</head>
+
+<body>
+	<!--cabecalho-->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light fixed-top" id="athenanavbar">
+			<a id="logoNav" href="index.html"><img src="img/athena.png" id="logonav" /></a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">INÍCIO</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="buscaandroid.html">PARA ANDROID</a>
+							<a class="dropdown-item" href="buscacomputador.html">PARA COMPUTADOR</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">PLANOS DE AULA</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="planosdeaula/novoplanoform1.html">ENVIAR NOVO PLANO</a>
+							<a class="dropdown-item" href="planosdeaula/buscasimples.html">BUSCAR POR PLANO</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="apoio.html">MATERIAL DE APOIO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="duvidas.html">DÚVIDAS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sobre.html">SOBRE</a>
+					</li>
+					<!-- BOTÃO BUSCA DESATIVADO
+			            <li class="nav-item">
+			                <a class="nav-link nav-linkcor" data-toggle="dropdown" href="#">BUSCAR</a>
+			                <div class="dropdown-menu" id="searchBar">
+			                  	<div id="containerSearchBar">
+			        	          	<p>Pesquise Recursos:</p>
+			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
+			        	          	<div class="form-row">
+			        	          		<div class="col-sm-3"><select class="form-control" name="h" id="h" form="formsearch">
+			        	          			<option value="" selected>Dispositivo</option>
+			        	          			<option value="ad">Android</option>
+			        	          			<option value="pc">Computador</option>
+			        	          		</select></div>
+			        	          		<div class="col-sm-3"><select class="form-control" name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Disciplina</option>
+			        	          			<option value="lp">Língua Portuguesa</option>
+			        	          			<option value="mat">Matemática</option>
+			        	          		</select></div>
+			        	          		<div class="col-sm-2"><select class="form-control" name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Ano</option>
+			        	          			<option value="1">1ºAno</option>
+			        	          			<option value="2">2ºAno</option>
+			        	          			<option value="3">3ºAno</option>
+			        	          			<option value="4">4ºAno</option>
+			        	          			<option value="5">5ºAno</option>
+			        	          			<option value="6">6ºAno</option>
+			        	          			<option value="7">7ºAno</option>
+			        	          			<option value="8">8ºAno</option>
+			        	          			<option value="9">9ºAno</option>
+			        	          		</select></div>
+			        	          		<div class="form-group col-sm-2"><input class="form-control" type="submit" value="Buscar"></div>
+			        	          	</div></form>
+			                  	</div>
+			                </div>
+			            </li> -->
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- abre corpo da página-->
+	<div id="containerContent">
+		<h1 class="titulo">APLICATIVOS PARA ANDROID</h1>
+
+		<div id="containerSearchBar" class="container ml-auto">
+			<form name="buscaavancada" id="buscaavancada" action="resultadobuscaand.html" class="form-inline">
+				<p class="bavancada">Busca Avançada:</p>
+				<div class="form-group">
+					<div><select name="d" class="form-control d" form="buscaavancada"
+							onchange="checkDescritors(d.value,a.value)">
+							<option value="" selected>Disciplina</option>
+							<option value="lp">Língua Portuguesa</option>
+							<option value="mat">Matemática</option>
+						</select></div>
+					<div><select name="a" class="form-control a" form="buscaavancada"
+							onchange="checkDescritors(d.value,a.value)">
+							<option value="" selected>Ano</option>
+							<option value="1">1ºAno</option>
+							<option value="2">2ºAno</option>
+							<option value="3">3ºAno</option>
+							<option value="4">4ºAno</option>
+							<option value="5">5ºAno</option>
+							<option value="6">6ºAno</option>
+							<option value="7">7ºAno</option>
+							<option value="8">8ºAno</option>
+							<option value="9">9ºAno</option>
+						</select></div>
+					<div><select class="form-control" name="t" id="t" form="buscaavancada" disabled="">
+							<option value="" selected>Descritor</option>
+							<option value="">Todos</option>
+						</select></div>
+					<input type="text" name="p" value="0" style="display: none">
+					<div><input class="form-control" type="submit" value="Buscar"></div>
+				</div>
+			</form>
+		</div>
+		<p id="nenhumRecurso">Nenhum recurso encontrado</p>
+
+		<div class="row rowRecurso">
+			<div id="recurso0" class="col-sm-3">
+				<img class="recursosTamanho border border-dark" onclick="irPararecursoAnd(0);">
+				<p class="tituloRecurso" onclick="irPararecursoAnd(0);"></p>
+				<p></p>
+			</div>
+			<div id="recurso1" class="col-sm-3">
+				<img class="recursosTamanho border border-dark" onclick="irPararecursoAnd(1);">
+				<p class="tituloRecurso" onclick="irPararecursoAnd(1);"></p>
+				<p></p>
+			</div>
+			<div id="recurso2" class="col-sm-3">
+				<img class="recursosTamanho border border-dark" onclick="irPararecursoAnd(2);">
+				<p class="tituloRecurso" onclick="irPararecursoAnd(2);"></p>
+				<p></p>
+			</div>
+			<div id="recurso3" class="col-sm-3">
+				<img class="recursosTamanho border border-dark" onclick="irPararecursoAnd(3);">
+				<p class="tituloRecurso" onclick="irPararecursoAnd(3);"></p>
+				<p></p>
+			</div>
+		</div>
+		<div class="row rowRecurso">
+			<div id="recurso4" class="col-sm-3">
+				<img class="recursosTamanho border border-dark" onclick="irPararecursoAnd(4);">
+				<p class="tituloRecurso" onclick="irPararecursoAnd(4);"></p>
+				<p></p>
+			</div>
+			<div id="recurso5" class="col-sm-3">
+				<img class="recursosTamanho border border-dark" onclick="irPararecursoAnd(5);">
+				<p class="tituloRecurso" onclick="irPararecursoAnd(5);"></p>
+				<p></p>
+			</div>
+			<div id="recurso6" class="col-sm-3">
+				<img class="recursosTamanho border border-dark" onclick="irPararecursoAnd(6);">
+				<p class="tituloRecurso" onclick="irPararecursoAnd(6);"></p>
+				<p></p>
+			</div>
+			<div id="recurso7" class="col-sm-3">
+				<img class="recursosTamanho border border-dark" onclick="irPararecursoAnd(7);">
+				<p class="tituloRecurso" onclick="irPararecursoAnd(7);"></p>
+				<p></p>
+			</div>
+		</div>
+		<div class="row" id="paginacao">
+			<div id="botoesPassarPagina">
+				<a class="btn btn-primary" href="#" id="paginaAnterior"></a>
+				<a class="btn btn-primary" id="paginaAtual"></a>
+				<a class="btn btn-primary" href="#" id="proximaPagina"></a>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- fecha corpo da página-->
+	<!--footer-->
+	<footer>
+		<div id="footerContainer">
+			<div class="row" id="row_one">
+				<div class="col-sm-5" id="logosInst">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/ufc.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/virtual.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/proativa.png" /></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4"></div>
+
+				<div class="col-sm-3" id="logosSocialNetworks">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="https://www.facebook.com/proativaufc" target="_blank"><img
+									src="img/footer/fb.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="https://www.instagram.com/proativa_ufc/" target="_blank"><img
+									src="img/footer/ig.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/tt.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-9">
+				</div>
+
+				<div class="col-sm-3" id="cccol">
+					<div class="row">
+						<div class="col-sm-6">
+						</div>
+						<div class="col-sm-6">
+							<a href="#"><img src="img/footer/cc.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/sweetalert2.all.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/buscaand.js"></script>
+	<script src="data/recursos_mobile.js"></script>
+	<script src="js/buscaavancadaand.js"></script>
+</body>
+
+</html>

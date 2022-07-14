@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <title>Busca Simples</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="img/ico.gif">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/resultadobuscapc.css">
+    <link rel="stylesheet" type="text/css" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/previa.css">
+</head>
+
+<body>
+    <!--cabecalho-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="athenanavbar">
+            <a id="logoNav" href="../index.html"><img src="../img/athena.png" id="logonav" /></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INÍCIO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../buscaandroid.html">PARA ANDROID</a>
+                            <a class="dropdown-item" href="../buscacomputador.html">PARA COMPUTADOR</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">PLANOS DE AULA</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="novoplanoform1.html">ENVIAR NOVO PLANO</a>
+							<a class="dropdown-item" href="buscasimples.html">BUSCAR POR PLANO</a>
+						</div>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apoio.html">MATERIAL DE APOIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../duvidas.html">DÚVIDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobre.html">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- abre corpo da página-->
+    <div id="containerContent">
+        <h1 class="titulo">Prévia do Plano de Aula</h1>
+        
+        <div id="planoDeAula">
+            <h1 id="titulo"></h1>
+            <div id="autor-disciplina-titulo">
+                <p id="plataforma"></p>
+                <p id="disciplina"></p>
+                <p id="ano"></p>
+            </div>
+            <div id="autor-container">
+                <p id="autor-titulo">Autor</p>
+                <p id="autor"></p>
+            </div>
+            <div id="reds-container">
+                <p>Recursos usados</p>
+                <ul id="reds-lista">
+
+                </ul>
+            </div>
+            <div id="descritores-container">
+                <p>Descritores</p>
+                <ul id="descritores-lista"></ul>
+            </div>
+        </div>
+        <div id="botoes">
+            <a id="visualizar" class="btn btn-primary">Visualizar</a>
+            <a id="baixar" class="btn btn-outline-primary">Baixar</a>
+        </div>
+    </div>
+    <!-- fecha corpo da página-->
+    <!--footer-->
+    <footer>
+        <div id="footerContainer">
+            <div class="row" id="row_one">
+                <div class="col-sm-5" id="logosInst">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/ufc.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/virtual.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/proativa.png" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4"></div>
+
+                <div class="col-sm-3" id="logosSocialNetworks">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="https://www.facebook.com/proativaufc" target="_blank"><img
+                                    src="../img/footer/fb.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="https://www.instagram.com/proativa_ufc/" target="_blank"><img
+                                    src="../img/footer/ig.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/tt.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                </div>
+
+                <div class="col-sm-3" id="cccol">
+                    <div class="row">
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#"><img src="../img/footer/cc.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var urlString = window.location.href;
+        var url = new URL(urlString);
+        var recursoId = url.searchParams.get("id");
+        var reds = document.getElementById("reds-lista");
+        var descritores = document.getElementById("descritores-lista");
+    
+        
+    
+        const getRecurso = async () => {
+            const data = await fetch(`${BASE_URL}/planosDeAula/buscarPorId/${recursoId}`)
+                .then((res) => res.json())
+                .catch(e => console.log(e));
+    
+            return data;
+        }
+    
+        const loadRecurso = async () => {
+            response = await getRecurso();
+            document.getElementById("titulo").textContent = response.titulo;
+            document.getElementById("autor").textContent = response.autor;
+            document.getElementById("disciplina").textContent = response.disciplina.descricao;
+            document.getElementById("ano").textContent = response.ano + "º ano";
+            document.getElementById("plataforma").textContent = response.plataforma;
+    
+            for(var i = 0; i < response.recursos.length; i++){
+                var r = document.createElement('li');
+                r.textContent = response.recursos[i].titulo;
+                reds.appendChild(r);
+            }
+    
+            for(var i = 0; i < response.descritores.length; i++){
+                var d = document.createElement('li');
+                d.textContent = response.descritores[i].descricao;
+                descritores.appendChild(d);
+            }
+            document.getElementById("baixar").href = `${BASE_URL}/planosDeAula/downloadPdf/${recursoId}`;
+            document.getElementById("visualizar").href = `${BASE_URL}/planosDeAula/verPdf/${recursoId}`;
+            document.getElementById("download-button").href = `http://localhost:8080/planosDeAula/downloadPdf/${recursoId}`;
+        }
+    
+        const downloadRecurso = async () => {
+            const data = await fetch(`http://localhost:8080/planosDeAula/downloadPdf/${recursoId}`)
+                .then((res) => res.json())
+                .catch(e => console.log(e));
+    
+            return data;
+        }
+    
+        const dRecurso = async () => {
+            response = await getRecurso();
+            return response;
+        }
+    
+        loadRecurso();
+    </script>
+</body>
+
+</html>

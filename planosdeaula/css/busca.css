@@ -1,0 +1,42 @@
+#form-titulo {
+    display: flex;
+}
+
+#form-titulo button{
+    margin-left: 60px;
+}
+
+.search-bar{
+    margin-bottom: 20px;
+}
+
+.result{
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.result img{
+    width:100%;
+}
+
+#resultado{
+    margin-bottom: 20px;
+}
+
+.nav-bar{
+    width: 20%; 
+    margin:auto;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.titulo{
+    font-weight: bold;
+    color: black;
+}
+
+.autor{
+    color:black;
+}

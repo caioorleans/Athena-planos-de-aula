@@ -1,0 +1,167 @@
+#containerContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+
+/*título da página*/
+h1.titulo {
+	font-size: 2em;
+	color: #0E89AC;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+}
+ 
+p.texto {
+	font-size: 1.2em;
+	text-align: justify;
+	margin: 5%;
+}
+
+.imgRecurso {
+	width: 75%;
+	margin: 5% 12.5%;
+}
+
+.caixaBtn {
+	margin: 2%;
+	margin-bottom: 5%;
+}
+
+.botao {
+	width: 75%;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.botaom {
+	width: 75%;
+	margin: 0% 0% 1% 0%;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.btnCaixa {
+	width: 75%;
+	color: white;
+	margin: 0 12.5%;
+}
+
+.alinhamentoImgBtn {
+	text-align: center;
+}
+
+.posicionamentoMetadados {
+	text-align: left;
+}
+
+.play {
+	width: 10%;
+	margin: 0 1%;
+}
+
+#divCompatibilidade{
+	margin-left: -10%;
+	text-align: center;
+	display: flex;
+	display:inline-flex;
+	flex-flow: row wrap; 
+	width: 120%; 
+	justify-content: center;
+}
+
+.caixaCompatibilidade.sistemas{
+	background-image: url('../img/icones/sistemas.svg');
+}
+
+.caixaCompatibilidade.programas{
+	background-image: url('../img/icones/programas.svg');
+}
+
+.caixaCompatibilidade.navegadores{
+	background-image: url('../img/icones/navegadores.svg');
+}
+
+.caixaCompatibilidade{
+	background-size: 100%;
+	width: 90px; 
+	height: 90px; 
+	margin: 0 5 0 5; 
+	position:relative;
+}
+
+.disposicao_1_icone{
+	align-self: center; 
+	width:50%; 
+	margin-top: 25%;
+}
+
+.disposicao_2_icones_1{
+	position:absolute; 
+	margin:0; 
+	width:25%; 
+	top:27%; 
+	left:27%
+}
+
+.disposicao_2_icones_2{
+	position:absolute; 
+	margin:0; 
+	width:27%; 
+	bottom:27%; 
+	right:24%
+}
+
+.disposicao_3_icones_1{
+	position:absolute; 
+	margin:0; 
+	width:25%; 
+	top:24%; 
+	left:27%
+}
+
+.disposicao_3_icones_2{
+	position:absolute; 
+	margin:0; 
+	width:25%; 
+	top:34%; 
+	right:20%
+}
+
+.disposicao_3_icones_3{
+	position:absolute; 
+	margin:0; 
+	width:25%; 
+	bottom:22%; 
+	right:43%
+}
+
+@media only screen and (max-width: 780px) {
+	#containerContent{
+		margin-top: 20%;
+	}
+	h1.titulo {
+		font-size: 1.2em;
+		color: #0E89AC;
+		font-weight: normal;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	p.texto {
+		font-size: 0.8em;
+		text-align: center;
+	}	
+
+	.botao {
+		width: 100%;
+	}
+
+	.btnCaixa {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+}

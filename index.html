@@ -1,0 +1,365 @@
+<html>
+
+<head>
+	<title>Página Inicial - Athena</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/gif" href="img/ico.gif">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+</head>
+
+<body>
+	<!--cabecalho-->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light fixed-top" id="athenanavbar">
+			<a id="logoNav" href="index.html"><img src="img/athena.png" id="logonav" /></a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link nav-linkcor" href="index.html">INÍCIO</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="buscaandroid.html">PARA ANDROID</a>
+							<a class="dropdown-item" href="buscacomputador.html">PARA COMPUTADOR</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">PLANOS DE AULA</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="planosdeaula/novoplanoform1.html">ENVIAR NOVO PLANO</a>
+							<a class="dropdown-item" href="planosdeaula/buscasimples.html">BUSCAR POR PLANO</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="apoio.html">MATERIAL DE APOIO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="duvidas.html">DÚVIDAS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sobre.html">SOBRE</a>
+					</li>
+					<!-- BOTÃO BUSCA DESATIVADO
+			            <li class="nav-item">
+			                <a class="nav-link" data-toggle="dropdown" href="#">BUSCAR</a>
+			                <div class="dropdown-menu" id="searchBar">
+			                  	<div id="containerSearchBar">
+			        	          	<p>Pesquise Recursos:</p>
+			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
+			        	          	<div class="form-row">
+			        	          		<div class="col-sm-3"><select class="form-control" name="h" id="h" form="formsearch">
+			        	          			<option value="" selected>Dispositivo</option>
+			        	          			<option value="ad">Android</option>
+			        	          			<option value="pc">Computador</option>
+			        	          		</select></div>
+			        	          		<div class="col-sm-3"><select class="form-control" name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Disciplina</option>
+			        	          			<option value="lp">Língua Portuguesa</option>
+			        	          			<option value="mat">Matemática</option>
+			        	          		</select></div>
+			        	          		<div class="col-sm-2"><select class="form-control" name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Ano</option>
+			        	          			<option value="1">1ºAno</option>
+			        	          			<option value="2">2ºAno</option>
+			        	          			<option value="3">3ºAno</option>
+			        	          			<option value="4">4ºAno</option>
+			        	          			<option value="5">5ºAno</option>
+			        	          			<option value="6">6ºAno</option>
+			        	          			<option value="7">7ºAno</option>
+			        	          			<option value="8">8ºAno</option>
+			        	          			<option value="9">9ºAno</option>
+			        	          		</select></div>
+			        	          		<div class="form-group col-sm-2"><input class="form-control" type="submit" value="Buscar"></div>
+			        	          	</div></form>
+			                  	</div>
+			                </div>
+			            </li> -->
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!--inicio do corpo-->
+	<!--Carrosel informativo-->
+	<div id="containerContent">
+		<h1 id="textoPrincipal">O primeiro repositório tão compacto que cabe no seu bolso</h1>
+		<div id="carouselInformativo" class="carousel slide corExterna" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselInformativo" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselInformativo" data-slide-to="1"></li>
+				<li data-target="#carouselInformativo" data-slide-to="2"></li>
+				<li data-target="#carouselInformativo" data-slide-to="3"></li>
+				<li data-target="#carouselInformativo" data-slide-to="4"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="buscacomputador.html"><img class="d-block w-100" src="img/home/carousel/01.png"
+							alt="Primero slide"></a>
+				</div>
+				<div class="carousel-item">
+					<a  href="apoio.html?id=referenciaSAEB"><img class="d-block w-100" src="img/home/carousel/02.png"
+							alt="Segundo slide"></a>
+				</div>
+				<div class="carousel-item">
+					<a href="buscacomputador.html"><img class="d-block w-100" src="img/home/carousel/03.png"
+							alt="Terceiro slide"></a>
+				</div>
+				<div class="carousel-item">
+					<a href="buscaandroid.html"><img
+							class="d-block w-100" src="img/home/carousel/04.png" alt="Quarto slide"></a>
+				</div>
+				<div class="carousel-item">
+					<a href="#downloadOffline"><img class="d-block w-100" src="img/home/carousel/05.png"
+							alt="Quinto slide"></a>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselInformativo" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselInformativo" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Proximo</span>
+			</a>
+		</div>
+	</div>
+
+
+	<!--recursos android-->
+	<div id="recursosandroid">
+		<h4 id="titulodispositivo"><a href="buscaandroid.html">APLICATIVOS PARA ANDROID</a></h4>
+		<div class="row" id="rowAndroid">
+			<div class="col-sm-1">
+				<img id="botaosliderEsquerda" onclick="scrollToLeft('#randroidcontainer')"
+					src="img/home/esquerda.png" />
+			</div>
+			<div class="col-sm-10">
+				<div id="randroidcontainer">
+					<div id="scrollbarandroid">
+						<div id="recursoA1" class="itemandroid item" onclick="pageAnd(0)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recursoA2" class="itemandroid item" onclick="pageAnd(1)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recursoA3" class="itemandroid item" onclick="pageAnd(2)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recursoA4" class="itemandroid item" onclick="pageAnd(3)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recursoA5" class="itemandroid item" onclick="pageAnd(4)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recursoA6" class="itemandroid item" onclick="pageAnd(5)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recursoA7" class="itemandroid item" onclick="pageAnd(6)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recursoA8" class="itemandroid item" onclick="pageAnd(7)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recursoA9" class="itemandroid item" onclick="pageAnd(8)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recursoA10" class="itemandroid item" onclick="pageAnd(9)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-1">
+				<img id="botaosliderDireita" onclick="scrollToRight('#randroidcontainer')" src="img/home/direita.png" />
+			</div>
+		</div>
+	</div>
+
+	<!--recursos computador-->
+	<div id="recursospc">
+		<h4 id="titulodispositivo"><a href="buscacomputador.html">RECURSOS PARA COMPUTADOR</a></h4>
+		<div class="row" id="rowpc">
+			<div class="col-sm-1">
+				<img id="botaosliderEsquerda" onclick="scrollToLeft('#rpccontainer')" src="img/home/esquerda.png" />
+			</div>
+			<div class="col-sm-10">
+				<div id="rpccontainer">
+					<div id="scrollbarpc">
+						<div id="recurso1" class="itempc item" onclick="page(0)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recurso2" class="itempc item" onclick="page(1)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recurso3" class="itempc item" onclick="page(2)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recurso4" class="itempc item" onclick="page(3)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recurso5" class="itempc item" onclick="page(4)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recurso6" class="itempc item" onclick="page(5)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recurso7" class="itempc item" onclick="page(6)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recurso8" class="itempc item" onclick="page(7)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recurso9" class="itempc item" onclick="page(8)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+						<div id="recurso10" class="itempc item" onclick="page(9)">
+							<img class="recursosTamanho" src="">
+							<p class="tituloRecurso"></p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-1">
+				<img id="botaosliderDireita" onclick="scrollToRight('#rpccontainer')" src="img/home/direita.png" />
+			</div>
+		</div>
+	</div>
+
+	<!--download offline-->
+	<div id="downloadOffline">
+		<div style="display: inline-block;">
+			<img class="aires" src="img/aires.png">
+		</div>
+		<div style="display: inline-block; width: 60%;">
+			<h3><i>Carregue todo o repositório em um pendrive e leve-o para qualquer lugar</i><br><br>
+				<input class="btn btn-primary btn-lg" type="button" value="Download" onclick="baixarRepo()">
+				<p id="msgajuda"><i><a href="duvidas.html#extrair">Clique aqui</a> e saiba como extrair os
+						arquivos...</i></p>
+			</h3>
+			<br>
+		</div>
+	</div>
+
+	</div>
+
+	<!--footer-->
+	<footer>
+		<div id="footerContainer">
+			<div class="row" id="row_one">
+				<div class="col-sm-5" id="logosInst">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/ufc.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/virtual.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/proativa.png" /></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4"></div>
+
+				<div class="col-sm-3" id="logosSocialNetworks">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="https://www.facebook.com/proativaufc" target="_blank"><img src="img/footer/fb.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="https://www.instagram.com/proativa_ufc/" target="_blank"><img src="img/footer/ig.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/tt.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-9">
+				</div>
+
+				<div class="col-sm-3" id="cccol">
+					<div class="row">
+						<div class="col-sm-6">
+						</div>
+						<div class="col-sm-6">
+							<a href="#"><img src="img/footer/cc.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/sweetalert2.all.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/recursoshome.js"></script>
+	<script>
+		$('.carousel-item a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			var id = $(this).attr('href'),
+				targetOffset = $(id).offset().top;
+
+			$('html, body').animate({
+				scrollTop: targetOffset - 100
+			}, 500);
+		});
+	</script>
+</body>
+
+</html>

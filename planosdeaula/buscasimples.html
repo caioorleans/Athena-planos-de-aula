@@ -1,0 +1,385 @@
+<html>
+
+<head>
+    <title>Busca Simples</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="img/ico.gif">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/resultadobuscapc.css">
+    <link rel="stylesheet" type="text/css" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/busca.css">
+</head>
+
+<body>
+    <!--cabecalho-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="athenanavbar">
+            <a id="logoNav" href="../index.html"><img src="../img/athena.png" id="logonav" /></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INÍCIO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../buscaandroid.html">PARA ANDROID</a>
+                            <a class="dropdown-item" href="../buscacomputador.html">PARA COMPUTADOR</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">PLANOS DE AULA</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="novoplanoform1.html">ENVIAR NOVO PLANO</a>
+							<a class="dropdown-item" href="buscasimples.html">BUSCAR POR PLANO</a>
+						</div>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apoio.html">MATERIAL DE APOIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../duvidas.html">DÚVIDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobre.html">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- abre corpo da página-->
+    <div id="containerContent">
+        <h1 class="titulo">PLANOS DE AULA DISPONÍVEIS</h1>
+        <div class="search-bar row">
+            <div class="col">
+                <form id="form-titulo" class="form-row" action="buscasimples.html">
+                    <input class="form-control col-9" type="text" id="titulo" name="titulo" placeholder="Busca por títudo do RED">
+                    <button type="submit" class="btn btn-primary col-2">Buscar</button>
+                </form>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-outline-primary" style="width:100%" onClick="mostrarForm();">Busca avançada</button>
+            </div>
+        </div>
+        <div id="busca-avancada-container" style="display:none;">
+            <form id="busca-avancada-form" action="buscaAvancada.html">
+                <p>Busca avançada</p>
+                <div class="row">
+                    <div class="col">
+                        <legend class="form-label">Disciplina</legend>
+                        <div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" id="portugues" name="disciplina" value="1">
+                                <label class="form-check-label" for="portugues">Lingua Portuguesa</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" id="matematica" name="disciplina"
+                                    value="2">
+                                <label class="form-check-label" for="matematica">Matemática</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <legend class="form-label">Plataforma</legend>
+                        <div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" id="computador" name="plataforma"
+                                    value="COMPUTADOR">
+                                <label class="form-check-label" for="computador">Computador</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" id="mobile" name="plataforma"
+                                    value="MOBILE">
+                                <label class="form-check-label" for="css">mobile</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col">
+                        <legend class="form-label" for="ano">Ano escolar</legend>
+                        <select class="form-control" id="ano" name="ano">
+                            <option value="">Ano escolar</option>
+                            <option value="1">1º ano</option>
+                            <option value="2">2º ano</option>
+                            <option value="3">3º ano</option>
+                            <option value="4">4º ano</option>
+                            <option value="5">5º ano</option>
+                            <option value="6">6º ano</option>
+                            <option value="7">7º ano</option>
+                            <option value="8">8º ano</option>
+                            <option value="9">9º ano</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <legend class="form-label" for="desccritor">Descritor</legend>
+                        <select class="form-control" id="descritor" name="descritor"></select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="resultado">
+            <div class="row">
+                <div class="col">
+                    <div class="result" id="result0" style="display:none;">
+                        <a id="link0">
+                            <img src="../img/planoDeAula.svg" />
+                            <p class="titulo" id="titulo0"></p>
+                            <p class="autor" id="autor0"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="result" id="result1" style="display:none;">
+                        <a id="link1">
+                            <img src="../img/planoDeAula.svg" />
+                            <p class="titulo" id="titulo1"></p>
+                            <p class="autor" id="autor1"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="result" id="result2" style="display:none;">
+                        <a id="link2">
+                            <img src="../img/planoDeAula.svg" />
+                            <p class="titulo" id="titulo2"></p>
+                            <p class="autor" id="autor2"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="result" id="result3" style="display:none;">
+                        <a id="link3">
+                            <img src="../img/planoDeAula.svg" />
+                            <p class="titulo" id="titulo3"></p>
+                            <p class="autor" id="autor3"></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="result" id="result4" style="display:none;">
+                        <a id="link4">
+                            <img src="../img/planoDeAula.svg" />
+                            <p class="titulo" id="titulo4"></p>
+                            <p class="autor" id="autor4"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="result" id="result5" style="display:none;">
+                        <a id="link5">
+                            <img src="../img/planoDeAula.svg" />
+                            <p class="titulo" id="titulo5"></p>
+                            <p class="autor" id="autor5"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="result" id="result6" style="display:none;">
+                        <a id="link6">
+                            <img src="../img/planoDeAula.svg" />
+                            <p class="titulo" id="titulo6"></p>
+                            <p class="autor" id="autor6"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="result" id="result7" style="display:none;">
+                        <a id="link7">
+                            <img src="../img/planoDeAula.svg" />
+                            <p class="titulo" id="titulo7"></p>
+                            <p class="autor" id="autor7"></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="nav-bar row">
+            <button class="col btn btn-primary" id="btn-anterior" onclick="antPag()"></button>
+            <p class="col" id="pag-atual"></p>
+            <button class="col btn btn-primary" id="btn-proximo" onclick="proxPag()"></button>
+        </div>
+    </div>
+    <!-- fecha corpo da página-->
+    <!--footer-->
+    <footer>
+        <div id="footerContainer">
+            <div class="row" id="row_one">
+                <div class="col-sm-5" id="logosInst">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/ufc.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/virtual.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/proativa.png" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4"></div>
+
+                <div class="col-sm-3" id="logosSocialNetworks">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="https://www.facebook.com/proativaufc" target="_blank"><img
+                                    src="../img/footer/fb.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="https://www.instagram.com/proativa_ufc/" target="_blank"><img
+                                    src="../img/footer/ig.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/tt.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                </div>
+
+                <div class="col-sm-3" id="cccol">
+                    <div class="row">
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#"><img src="../img/footer/cc.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+
+        function mostrarForm() {
+            document.getElementById("busca-avancada-container").style.display = "block";
+        }
+        var urlString = window.location.href;
+        var url = new URL(urlString);
+
+        var titulo = url.searchParams.get("titulo");
+        if (titulo == null) {
+            titulo = ".";
+        }
+        var pag = url.searchParams.get("pag");
+        if (pag == null) {
+            pag = 0;
+        }
+
+
+        var btnAnterior = document.getElementById("btn-anterior");
+        var btnProximo = document.getElementById("btn-proximo");
+        var pagAtual = document.getElementById("pag-atual");
+
+        function setPaginacao() {
+            if (pag == 0) {
+                document.getElementById("btn-anterior").style.display = "none";
+            }
+            else {
+                btnAnterior.textContent = `pag. ${pag}`;
+            }
+            pagAtual.textContent = ` pag. ${parseInt(pag) + 1}`;
+
+            btnProximo.textContent = `pag. ${parseInt(pag) + 2}`;
+        }
+
+        function proxPag() {
+            window.location.href = "buscasimples.html?pag=" + (parseInt(pag) + 1) + "&titulo=" + titulo;
+        }
+
+        function antPag() {
+            window.location.href = "buscasimples.html?pag=" + (parseInt(pag) - 1) + "&titulo=" + titulo;
+        }
+
+        const getRecursos = async () => {
+            const data = await fetch(`${BASE_URL}/planosDeAula/buscaSimples/${pag}/${titulo}`)
+                .then((res) => res.json())
+                .catch(e => console.log(e));
+
+            return data;
+        }
+
+        const loadRecursos = async () => {
+            response = await getRecursos();
+            if (response.last == true) {
+                btnProximo.disabled = true;
+            }
+
+            for (i = 0; i < response.content.length; i++) {
+                document.getElementById("result" + i).style.display = "block";
+                document.getElementById("link" + i).href = `previa.html?id=${response.content[i].id}`;
+                document.getElementById("titulo" + i).textContent = response.content[i].titulo;
+                document.getElementById("autor" + i).textContent = response.content[i].autor;
+            }
+
+            return response.content;
+        }
+
+        const getDescritores = async (disciplina) => {
+            const data = await fetch(BASE_URL + '/descritores/buscarPorDisciplina?id=' + disciplina)
+                .then((res => res.json()))
+                .catch(e => console.log(e));
+
+            return data;
+        }
+
+        const loadDescritores = async (disciplina) => {
+            response = await getDescritores(disciplina);
+
+            while (descritor.firstChild) {
+                descritor.removeChild(descritor.firstChild);
+            }
+            var option = document.createElement('option');
+            option.value = "";
+            option.textContent = "-";
+            descritor.appendChild(option);
+            for (var i = 0; i < response.length; i++) {
+                var op = document.createElement('option');
+                op.value = response[i].id;
+                op.textContent = response[i].descricao;
+                descritor.appendChild(op);
+            }
+        }
+
+        var res = loadRecursos();
+        var descritor = document.getElementById("descritor");
+        document.getElementById("portugues").addEventListener('click', function (event) {
+            loadDescritores(1);
+        });
+        document.getElementById("matematica").addEventListener('click', function (event) {
+            loadDescritores(2);
+        });
+
+        setPaginacao();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,506 @@
+<html>
+
+<head>
+	<title>Dúvidas - Athena</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/gif" href="img/ico.gif">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/duvidas.css">
+</head>
+
+<body>
+	<!--cabecalho-->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light fixed-top" id="athenanavbar">
+			<a id="logoNav" href="index.html"><img src="img/athena.png" id="logonav" /></a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">INÍCIO</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="buscaandroid.html">PARA ANDROID</a>
+							<a class="dropdown-item" href="buscacomputador.html">PARA COMPUTADOR</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">PLANOS DE AULA</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="planosdeaula/novoplanoform1.html">ENVIAR NOVO PLANO</a>
+							<a class="dropdown-item" href="planosdeaula/buscasimples.html">BUSCAR POR PLANO</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="apoio.html">MATERIAL DE APOIO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-linkcor" href="duvidas.html">DÚVIDAS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sobre.html">SOBRE</a>
+					</li>
+					<!-- BOTÃO BUSCA DESATIVADO
+			            <li class="nav-item">
+			                <a class="nav-link" data-toggle="dropdown" href="#">BUSCAR</a>
+			                <div class="dropdown-menu" id="searchBar">
+			                  	<div id="containerSearchBar">
+			        	          	<p>Pesquise Recursos:</p>
+			        	          	<form name="formsearch" id="formsearch" onsubmit="return checkSearch()">
+			        	          	<div class="form-row">
+			        	          		<div class="col-sm-3"><select class="form-control" name="h" id="h" form="formsearch">
+			        	          			<option value="" selected>Dispositivo</option>
+			        	          			<option value="ad">Android</option>
+			        	          			<option value="pc">Computador</option>
+			        	          		</select></div>
+			        	          		<div class="col-sm-3"><select class="form-control" name="d" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Disciplina</option>
+			        	          			<option value="lp">Língua Portuguesa</option>
+			        	          			<option value="mat">Matemática</option>
+			        	          		</select></div>
+			        	          		<div class="col-sm-2"><select class="form-control" name="a" form="formsearch" onchange="checkDescritors(d.value,a.value)">
+			        	          			<option value="" selected>Ano</option>
+			        	          			<option value="1">1ºAno</option>
+			        	          			<option value="2">2ºAno</option>
+			        	          			<option value="3">3ºAno</option>
+			        	          			<option value="4">4ºAno</option>
+			        	          			<option value="5">5ºAno</option>
+			        	          			<option value="6">6ºAno</option>
+			        	          			<option value="7">7ºAno</option>
+			        	          			<option value="8">8ºAno</option>
+			        	          			<option value="9">9ºAno</option>
+			        	          		</select></div>
+			        	          		<div class="form-group col-sm-2"><input class="form-control" type="submit" value="Buscar"></div>
+			        	          	</div></form>
+			                  	</div>
+			                </div>
+			            </li> -->
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!--inicio do corpo da página-->
+	<div id="containerContent">
+		<h1 class="titulo">DÚVIDAS FREQUENTES</h1>
+
+		<div class="container">
+			<div class="panel-group" id="accordion">
+				<div class="content">
+					<!--card-->
+					<div class="row caixa bordaA">
+						<div class="col-sm-2">
+							<div class="imagens col-sm-2">
+								<img class="imgFundo" src="img/faq/azul.png">
+								<img class="imgDuvida3" src="img/faq/athena2.png">
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<div class="panel panel-default boxie">
+								<!--abre a caixa-->
+								<div class="panel-heading">
+									<h4 class="panel-title titulo4A">
+										<a id="downloadCompleto" class="dropdown-toggle collapseColorA"
+											data-toggle="collapse" data-parent="#accordion" href="#collapse3">COMO POSSO
+											FAZER O DOWNLOAD
+											COMPLETO DO REPOSITÓRIO ATHENA?</a>
+									</h4>
+								</div>
+								<div id="collapse3" class="panel-collapse collapse in">
+									<div class="panel-body corpoTexto">
+										<ol><br>
+											<li>Clique em “Início” e role a tela até chegar na opção de fazer download
+												do repositório. Clique em “Download”.</li><br>
+											<img src="img/duvidas/t1.png" class="imgTexto"><br><br><br>
+											<li>Clique com o botão direito no arquivo baixado e selecione a opção
+												“Extrair aqui” para extrair o Repositório Athena.</li><br>
+											<img src="img/duvidas/t2.png" class="imgTexto"><br><br><br>
+											<li>Após a extração, surgirá uma pasta com todo o repositório. Abra a pasta
+												e prossiga para o próximo passo.</li><br>
+											<img src="img/duvidas/t3.png" class="imgTexto"><br><br><br>
+											<li>O arquivo de nome “index” possibilita o acesso ao repositório de forma
+												off-line.</li><br>
+											<img src="img/duvidas/t4.png" class="imgTexto"><br><br><br>
+											<li>A pasta com o nome “recursos” contém todos os recursos do repositório.
+												Abra e siga para o próximo passo.</li><br>
+											<img src="img/duvidas/t5.png" class="imgTexto"><br><br><br>
+											<li>Na pasta “recurso” estão todos os RED para computador. Basta abrir,
+												selecionar a disciplina e o ano desejado para encontrar todos os RED da
+												categoria escolhida.</li><br>
+											<img src="img/duvidas/t6.png" class="imgTexto"><br><br>
+											<a href="#downloadCompleto"><img src="img/paraTopoA.svg"
+													class="imgTexto"></a><br>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--fecha card-->
+					<!--card-->
+					<div class="row caixa bordaV">
+						<div class="col-sm-2">
+							<div class="imagens col-sm-2">
+								<img class="imgFundo" src="img/faq/verde.png">
+								<img class="imgDuvida5" src="img/faq/surgiuAthena.png">
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<div class="panel panel-default boxie">
+								<!--abre a caixa-->
+								<div class="panel-heading">
+									<h4 class="panel-title titulo4V">
+										<a id="habilitarflash" class="dropdown-toggle collapseColorV"
+											data-toggle="collapse" data-parent="#accordion" href="#collapse5">QUAL É O
+											TAMANHO RECOMENDADO DE
+											UM <i>PEN DRIVE</i> PARA O DOWNLOAD COMPLETO DO REPOSITÓRIO ATHENA?</a>
+									</h4>
+								</div>
+								<div id="collapse5" class="panel-collapse collapse in">
+									<div class="panel-body corpoTexto"><br>Para o download do Repositório Athena, você
+										precisará de um pen drive com capacidade de, no mínimo, 4gB. Esse é o tamanho
+										necessário para o armazenamento de todo o conteúdo do repositório.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--fecha card-->
+					<!--card-->
+					<div class="row caixa bordaA">
+						<div class="col-sm-2">
+							<div class="imagens col-sm-2">
+								<img class="imgFundo" src="img/faq/azul.png">
+								<img class="imgDuvida2" src="img/faq/zip.png">
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<div class="panel panel-default boxie">
+								<!--abre a caixa-->
+								<div class="panel-heading">
+									<h4 class="panel-title titulo4A"> <a id="extrair"
+											class="dropdown-toggle collapseColorA" data-toggle="collapse"
+											data-parent="#accordion" href="#collapse2">COMO
+											EXTRAIR OS ARQUIVOS COM OS RED PARA COMPUTADOR APÓS O DOWNLOAD?</a>
+									</h4>
+								</div>
+								<div id="collapse2" class="panel-collapse collapse in">
+									<div class="panel-body corpoTexto"><br>
+										<ol>
+											Os RED para computador disponíveis no Repositório Athena são compactados em
+											um formato de arquivo que facilita o seu transporte. Pode-se dizer que o
+											recurso é colocado dentro de um pacote e, para abrir este pacote, é
+											necessário utilizar um programa de extração. Sugerimos utilizar o WinRAR ou
+											PeaZip.
+
+											<br><br><i>Os próximos passos mostram como fazer o download desses
+												programas. Escolha somente um deles.</i><br><br>
+
+											<b>WinRAR:</b> <a
+												href="https://www.win-rar.com/predownload.html?&L=0&Version=32bit"
+												target="_blank" rel="noopener noreferrer">Clique aqui</a> para acessar o
+											site do programa. Confira se a linguagem está para “Português brasileiro” e,
+											em seguida, clique em “Continuar para baixar WinRAR”.<br><br>
+											<img src="img/duvidas/d2.png" class="imgTexto"><br><br><br>
+											<b>PeaZip:</b> <a href="https://peazip.github.io/">Clique aqui</a> para
+											acessar o site do programa. Na imagem, duas opções de download são
+											mostradas. Selecione a opção adequada para o sistema do seu
+											computador.<br><br>
+											<img src="img/duvidas/d1.png" class="imgTexto"><br><br><br>
+
+											A seguir, saiba como extrair os RED.<br><br>
+
+											<li>Para extrair o RED, clique com o botão direito no arquivo baixado e
+												selecione a opção “Extrair aqui”.</li><br>
+											<img src="img/duvidas/a5.png" class="imgTexto"><br><br><br>
+											<li> Abra o RED, utilizando o Adobe Flash Projector.</li><br>
+											<img src="img/duvidas/a6.png" class="imgTexto"><br><br>
+											<li>Pronto! Agora você já possui o RED selecionado em seu computador.</li>
+											<br><br>
+											<a href="#extrair"><img src="img/paraTopoA.svg" class="imgTexto"></a><br>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--fecha card-->
+					<!--card-->
+					<div class="row caixa bordaV">
+						<div class="col-sm-2">
+							<div class="imagens col-sm-2">
+								<img class="imgFundo" src="img/faq/verde.png">
+								<img class="imgDuvida" src="img/faq/download.png">
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<div class="panel panel-default boxie">
+								<!--abre a caixa-->
+								<div class="panel-heading">
+									<h4 class="panel-title titulo4V">
+										<a id="downloadRecursos" class="dropdown-toggle collapseColorV"
+											data-toggle="collapse" data-parent="#accordion" href="#collapse1">COMO POSSO
+											FAZER O DOWNLOAD DOS
+											RECURSOS PARA COMPUTADOR?</a>
+									</h4>
+								</div>
+								<div id="collapse1" class="panel-collapse collapse in">
+									<div class="panel-body corpoTexto">
+										<ol><br>
+											<li>No menu superior, selecione “Para Computador” na opção “Recursos”.</li>
+											<br>
+											<img src="img/duvidas/a1.png" class="imgTexto"><br><br><br>
+											<li>Na barra de busca, selecione uma disciplina, o ano escolar e, se
+												desejar, um descritor. Clique em “Buscar” para filtrar os recursos.</li>
+											<br>
+											<img src="img/duvidas/a2.png" class="imgTexto"><br><br><br>
+											<li>Escolha um dos RED disponíveis. (Para esse passo a passo, utilizaremos,
+												como exemplo, o RED “Brincando com as vogais”).</li><br>
+											<img src="img/duvidas/a3.png" class="imgTexto"><br><br><br>
+											<li>Clique em “Download” para baixar o RED.</li><br>
+											<img src="img/duvidas/a4.png" class="imgTexto"><br><br><br>
+											<li>Clique com o botão direito no arquivo baixado e selecione a opção
+												“Extrair aqui” para extrair o RED.</li><br>
+											<img src="img/duvidas/a5.png" class="imgTexto"><br><br><br>
+											<li>Após isso, o recurso estará no formato .swf e poderá ser executado com o
+												auxílio
+												do programa Adobe Flash Projector. Caso ainda não possua o programa em
+												seu computador,
+												<a href="#flashprojector">clique aqui</a> para acessar o rutorial de
+												como baixá-lo para, em seguida, executar
+												o RED.
+											</li><br>
+											<img src="img/duvidas/a6.png" class="imgTexto"><br><br>
+											<a href="#downloadRecursos"><img src="img/paraTopoV.svg"
+													class="imgTexto"></a><br>
+										</ol>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--fecha card-->
+					<!--card-->
+					<div class="row caixa bordaA">
+						<div class="col-sm-2">
+							<div class="imagens col-sm-2">
+								<img class="imgFundo" src="img/faq/azul.png">
+								<img class="imgDuvida4" src="img/faq/recursosfaq.png">
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<div class="panel panel-default boxie">
+								<!--abre a caixa-->
+								<div class="panel-heading">
+									<h4 class="panel-title titulo4A"> <a id="flashprojector"
+											class="dropdown-toggle collapseColorA" data-toggle="collapse"
+											data-parent="#accordion" href="#collapse4">O ATHENA PRECISA DE ALGUM
+											PROGRAMA
+											ESPECÍFICO PARA A EXECUÇÃO DOS RED PARA COMPUTADOR? </a>
+									</h4>
+								</div>
+								<div id="collapse4" class="panel-collapse collapse in">
+									<div class="panel-body corpoTexto"><br>É necessário a instalação do programa "Adobe
+										Flash Player
+										Projector", atente para versão compatível com o sistema operacional do seu
+										computador (Windows, Mac ou Linux).<br>
+										Abaixo, segue um passo a passo de como baixar e configurar o programa para
+										utilização dos recursos em "Flash".
+										<br><br>
+										<ol>
+											<li>Acesse o site <a
+													href="https://www.adobe.com/support/flashplayer/debug_downloads.html"
+													target="_blank" rel="noopener noreferrer">Adobe Flash Player</a>,
+												role para baixo até encontrar a opção de download do Adobe Flash Player
+												Projector Compatível
+												com seu sistema operacional.</li><br>
+											<img src="img/duvidas/p1.png" class="imgTexto"><br><br><br>
+											<li>Selecione o local onde o arquivo será salvo e clique em salvar. Caso
+												essa janela não apareça, significa que o arquivo foi salvo no local
+												padrão de download do seu computador.</li><br>
+											<img src="img/duvidas/p2.png" class="imgTexto"><br><br><br>
+											<li>Para configurar, usaremos, como exemplo, o RED "A História da Páscoa".
+												<a href="recursos/recurso/Portugues/1/ahistoriadapascoa.zip"
+													target="_blank">Clique aqui</a> para baixá-lo.
+											</li><br>
+											<li>Extraia o RED, clicando com o botão direito do arquivo baixado e
+												selecione "Extrair aqui..."</li><br>
+											<img src="img/duvidas/p4.png" class="imgTexto"><br><br><br>
+											<li>Após esses passos, o RED estará na sua pasta. Agora, precisamos
+												configurá-lo para abrir com o "Adobe Flash Player" que baixamos
+												anteriormente.</li><br>
+											<img src="img/duvidas/p5.png" class="imgTexto"><br><br><br>
+											<li>Clique com o botão direito no RED, mova o mouse para a opção "Abrir com"
+												e selecione a opção "Escolher outro aplicativo".</li><br>
+											<img src="img/duvidas/p6.png" class="imgTexto"><br><br><br>
+											<li>Certifique-se de que a caixa de "Sempre usar este aplicativo para abrir
+												arquivos .swf" esteja marcada e clique em "Mais aplicativos".</li><br>
+											<img src="img/duvidas/p7.png" class="imgTexto"><br><br><br>
+											<li>Role a barra lateral para baixo e selecione a opção "Procurar outro
+												aplicativo neste PC".</li><br>
+											<img src="img/duvidas/p8.png" class="imgTexto"><br><br><br>
+											<li>Na janela que abriu, vá até a pasta do local onde você salvou o programa
+												"Adobe Flash Player" (por padrão, está com o nome de
+												"flashplayer_32_sa"), selecione-o e clique em "Abrir".</li><br>
+											<img src="img/duvidas/p9.png" class="imgTexto"><br><br><br>
+											<li>Agora todos os recursos no formato .swf funcionarão em seu computador!
+												Esse procedimento só é necessário ser feito uma vez. Após feito, para
+												abrir um RED nesse mesmo formato, basta clicar duas vezes no próprio
+												recurso.</li><br>
+											<img src="img/duvidas/p10.png" class="imgTexto"><br><br>
+											<a href="#flashprojector"><img src="img/paraTopoA.svg"
+													class="imgTexto"></a><br>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--fecha card-->
+					<!--card-->
+					<div class="row caixa bordaV">
+						<div class="col-sm-2">
+							<div class="imagens col-sm-2">
+								<img class="imgFundo" src="img/faq/verde.png">
+								<img class="imgDuvida2" src="img/faq/mobile.png">
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<div class="panel panel-default boxie">
+								<!--abre a caixa-->
+								<div class="panel-heading">
+									<h4 class="panel-title titulo4V">
+										<a class="dropdown-toggle collapseColorV" data-toggle="collapse"
+											data-parent="#accordion" href="#collapse7">POR QUE OS LINKS DOS APLICATIVOS
+											EDUCACIONAIS PODEM NÃO FUNCIONAR?</a>
+									</h4>
+								</div>
+								<div id="collapse7" class="panel-collapse collapse in">
+									<div class="panel-body corpoTexto"><br>Por estarem disponíveis na Play Store e por
+										sofrerem constantes atualizações, os links dos aplicativos disponibilizados no
+										Repositório Athena podem, eventualmente, aparecer inativos. Buscando manter o
+										repositório sempre atualizado, os links são constantemente revisados, de forma a
+										manter no repositório somente aplicativos disponíveis na Play Store.<br>
+										Caso o aplicativo selecionado apresente algum erro, informe nossa equipe: athena@virtual.ufc.br.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--fecha card-->
+				</div>
+
+			</div>
+			<!--fecha a div panel group-->
+		</div>
+		<!--fecha a div container-->
+
+	</div>
+	<!--fecha a div content-->
+	<!--fim do corpo da página-->
+
+
+	<!--footer-->
+	<footer>
+		<div id="footerContainer">
+			<div class="row" id="row_one">
+				<div class="col-sm-5" id="logosInst">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/ufc.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/virtual.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/proativa.png" /></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4"></div>
+
+				<div class="col-sm-3" id="logosSocialNetworks">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="https://www.facebook.com/proativaufc" target="_blank"><img src="img/footer/fb.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="https://www.instagram.com/proativa_ufc/" target="_blank"><img src="img/footer/ig.png" /></a>
+						</div>
+						<div class="col-sm-4">
+							<a href="#"><img src="img/footer/tt.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-9">
+				</div>
+
+				<div class="col-sm-3" id="cccol">
+					<div class="row">
+						<div class="col-sm-6">
+						</div>
+						<div class="col-sm-6">
+							<a href="#"><img src="img/footer/cc.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/sweetalert2.all.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script>
+		$('li a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			var id = $(this).attr('href'),
+				targetOffset = $(id).offset().top;
+
+			$('html, body').animate({
+				scrollTop: targetOffset - 100
+			}, 500);
+		});
+
+		$('ol a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			var id = $(this).attr('href'),
+				targetOffset = $(id).offset().top;
+
+			$('html, body').animate({
+				scrollTop: targetOffset - 100
+			}, 500);
+
+			id2 = id.split('#');
+			clicarDepoisDe(0.5, id2[1]);
+		});
+
+		function delay(n) {
+			return new Promise(function (resolve) {
+				setTimeout(resolve, n * 1000);
+			});
+		}
+
+		async function clicarDepoisDe(s, id) {
+			await delay(s);
+			document.getElementById(id).click();
+		}
+	</script>
+</body>
+
+</html>

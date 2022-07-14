@@ -1,0 +1,1 @@
+const BASE_URL = "https://athena-planos-de-aula.herokuapp.com";

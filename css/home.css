@@ -1,0 +1,382 @@
+@charset "UTF-8";
+#containerExterno {
+	background-color: 
+}
+
+#containerContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8%;
+}
+
+#textoPrincipal {
+	width: 70%;
+	margin:0px;
+	padding: 0px;
+	margin-left: 15%;
+	text-align: center;
+	font-size: 3em;
+	color: #0E89AC;
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 4vh;
+}
+
+
+/*INICIO: Carousel Informativo*/
+
+
+#carouselInformativo{
+	margin-bottom: 5vh;
+}
+
+.carousel-control-prev-icon {
+	position: absolute;
+	height: 100%;
+	left: 0%;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230E89AC' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	padding: 10%;
+
+}
+
+.carousel-control-next-icon {
+	position: absolute;
+	height: 100%;
+	right: 0%;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230E89AC' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	padding: 10%;
+
+}
+
+.carousel-indicators li {
+	background-color: #0E89AC !important;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+}
+
+
+/*FIM: Carousel Informativo*/
+
+img.recursosTamanho {
+	width: 96.5px; 
+	height: 130.9px;
+}
+
+#titulodispositivo > a {
+	color: white;
+	transition: 0.2s;
+}
+
+#titulodispositivo > a:hover,
+#titulodispositivo > a:active,
+#titulodispositivo > a:focus {
+	
+	color: white;
+	font-size: 1.05em;
+	outline: none;
+	text-decoration: none;
+}
+
+/*INICIO:recursos scroll lateral ANDROID*/
+#recursosandroid{
+	background-color:#EC7F2B; 
+	width: 100%;
+}
+#titulodispositivo{
+	color:white;
+	font-size: 1.3em;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-left: 10%;
+}
+#rowAndroid{
+	width: 80%;
+	margin-left: 10%;
+	padding-bottom: 8vh;
+}
+#rowAndroid .col-sm-1{
+	margin:auto;
+}
+
+#randroidcontainer{
+	width: 100%;
+	overflow-x:scroll;
+	overflow-x: hidden;
+	overflow: -moz-scrollbars-none;
+	scrollbar-width: none;
+}
+
+#randroidcontainer > * {
+	display: flex;
+}
+
+
+#randroidcontainer::-webkit-scrollbar{
+	display: none;
+}
+
+#scrollbarandroid{
+	width: 140vw;
+}
+
+#scrollbarandroid::-webkit-scrollbar{
+	display: none;
+}
+
+.itemandroid{
+	display: inline-block;
+	margin-right: 2vw;
+	width: 12vw;
+}
+.itemandroid img{
+	width: 100%;
+}
+.itemandroid p{
+	color: white;
+	margin:0px;
+	font-size: 1.03em;
+}
+
+.item {
+	cursor: pointer;
+}
+/*FIM:recursos scroll lateral ANDROID*/
+
+/*INICIO:recursos scroll lateral PC*/
+#recursospc{
+	background-color:#0E89AC; 
+	width: 100%;
+}
+#rowpc{
+	width: 80%;
+	margin-left: 10%;
+	padding-bottom: 8vh;
+}
+#rowpc .col-sm-1{
+	margin:auto;
+}
+#rpccontainer{
+	width: 100%;
+	overflow-x:scroll;
+	overflow-x: hidden;
+	overflow: -moz-scrollbars-none;
+	scrollbar-width: none;
+}
+
+#rpccontainer > * {
+	display: flex;
+}
+
+
+#rpccontainer::-webkit-scrollbar{
+	display: none;
+}
+#scrollbarpc{
+	width: 140vw;
+}
+.itempc{
+	display: inline-block;
+	margin-right: 2vw;
+	width: 12vw;
+}
+.itempc img{
+	width: 100%;
+}
+.itempc p{
+	color: white;
+	margin: 0px;
+	font-size: 1.03em;
+}
+/*FIM:recursos scroll lateral PC*/
+
+/*INICIO:COMUM DOS DOIS SLIDERS*/
+#botaosliderEsquerda:hover, #botaosliderDireita:hover{
+	cursor: pointer;
+	width: 80%;
+}
+#botaosliderEsquerda{
+	width: 70%;
+}
+#botaosliderDireita{
+	width: 70%;
+}
+
+p.tituloRecurso{
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+p {
+	margin: 1%;
+}
+/*FIM:COMUM DOS DOIS SLIDERS*/
+
+/*INICIO:DOWNLOAD OFFLINE PARTE*/
+#downloadOffline{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 8vh;
+	margin-bottom: 8vh;
+	text-align: center;
+	padding: 5% 0;
+}
+
+#downloadOffline h3 {
+	background-color: #FFFFFF;
+	opacity: 0.8;
+	margin-bottom: -22%; 
+	font-size: 3rem;
+}
+
+#msgajuda {
+	position: relative;
+	top: 3vh;
+	font-size: 14px;
+}
+
+.aires {
+/*	background-image: url("../img/aires.png");
+	background-size: 25%; 
+	background-repeat: no-repeat;*/
+	padding: 0%;
+	margin-bottom: -40%; 
+	padding-bottom: 0%; 
+	width: 100%;
+}
+
+/*#downloadOffline .col-sm-5 button{
+	width: 100%;
+	font-size: 1em; 
+}
+
+#downloadOffline .col-sm-5{
+	margin:auto;
+}
+
+#downloadOffline h3{
+	text-align: center;
+	color: #0069d9;
+	font-size: 1.6em;
+	margin: 0% 2%;
+}*/
+/*FIM:DOWNLOAD OFFLINE PARTE*/
+
+@media only screen and (max-width: 780px) {
+	#containerContent{
+		margin-top: 20%;
+	}
+	#textoPrincipal {
+		width: 100%;
+		margin:0px;
+		padding: 0px;
+		text-align: center;
+		font-size: 1.5em;
+		color: #0E89AC;
+		font-style: italic;
+		font-weight: normal;
+		margin-bottom: 4vh;
+	}
+	#infosIniciais{
+		margin-bottom: 12vh;
+	}
+	.imginfo{
+		width: 45%;
+	}
+	.infos{
+		font-size: 0.7em;
+	}
+	#titulodispositivo{
+		font-size: 0.9em;
+	}
+
+	/*recursos android*/
+	.itemandroid{
+		display: inline-block;
+		margin-right: 2vw;
+		width: 45vw;
+	}
+	#scrollbarandroid{
+		width: 470vw;
+		margin-bottom: 4vh;
+	}
+	.itemandroid p{
+		color: white;
+		margin:0px;
+		font-size: 0.7em;
+	}
+	#rowAndroid .col-sm-1{
+		width: 10%;
+		padding: 0px;
+	}
+	#rowAndroid .col-sm-10{
+		width: 80%;
+	}
+
+	/*recursos pc*/
+	.itempc{
+		display: inline-block;
+		margin-right: 2vw;
+		width: 45vw;
+	}
+	#scrollbarpc{
+		width: 470vw;
+		margin-bottom: 4vh;
+	}
+	.itempc p{
+		color: white;
+		margin:0px;
+		font-size: 0.7em;
+	}
+	#rowpc .col-sm-1{
+		width: 10%;
+		padding: 0px;
+	}
+	#rowpc .col-sm-10{
+		width: 80%;
+	}
+
+	/*comum entre dois sliders*/
+	#botaosliderEsquerda, #botaosliderDireita{
+		width: 100%;
+	}
+	p.tituloRecurso{
+		font-size: 0.9em;
+		font-weight: 600;
+	}
+
+	/*download offline*/
+	#downloadOffline .col-sm-6 h3{
+		margin-top:3vh;
+		text-align: center;
+		color: #0069d9;
+		font-size: 1.2em;
+	}
+
+	ol.carousel-indicators {
+		margin-bottom: 0rem !important;
+	}
+
+	.carousel-indicators li {
+		background-color: #94999D;
+		height: 7px;
+		width: 7px;
+		border-radius: 50%;
+	}
+
+	.aires {
+	/*	background-image: url("../img/aires.png");
+		background-size: 25%; 
+		background-repeat: no-repeat;*/
+		margin, padding: 0%;
+		margin-bottom: 1%; 
+		width: 70%;
+	}
+
+	#downloadOffline h3 {
+		background-color: #FFFFFF;
+		opacity: 0.8;
+		margin-bottom: -22%; 
+		font-size: 2rem;
+	}
+}

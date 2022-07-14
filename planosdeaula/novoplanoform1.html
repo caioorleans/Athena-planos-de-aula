@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <title>Novo Plano de Aula</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="img/ico.gif">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/resultadobuscapc.css">
+    <link rel="stylesheet" type="text/css" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+</head>
+
+<body>
+    <!--cabecalho-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="athenanavbar">
+            <a id="logoNav" href="../index.html"><img src="../img/athena.png" id="logonav" /></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INÍCIO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../buscaandroid.html">PARA ANDROID</a>
+                            <a class="dropdown-item" href="../buscacomputador.html">PARA COMPUTADOR</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">PLANOS DE AULA</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="novoplanoform1.html">ENVIAR NOVO PLANO</a>
+							<a class="dropdown-item" href="buscasimples.html">BUSCAR POR PLANO</a>
+						</div>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apoio.html">MATERIAL DE APOIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../duvidas.html">DÚVIDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobre.html">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- abre corpo da página-->
+    <div id="containerContent">
+        <h1 class="titulo">CRIAR PLANO DE AULA</h1>
+
+        <form action="novoplanoform2.html" style="width:70%; margin:auto;">
+            <div class="row">
+                <div class="col">
+                    <legend class="form-label">Plataforma</legend>
+                    <div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" id="computador" name="plataforma"
+                                value="COMPUTADOR">
+                            <label class="form-check-label" for="computador">Computador</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" id="mobile" name="plataforma" value="MOBILE">
+                            <label class="form-check-label" for="css">mobile</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <legend class="form-label">Disciplina</legend>
+                    <div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" id="portugues" name="disciplina" value="1">
+                            <label class="form-check-label" for="portugues">Lingua Portuguesa</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" id="matematica" name="disciplina" value="2">
+                            <label class="form-check-label" for="matematica">Matemática</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col">
+                    <legend class="form-label" for="ano">Ano escolar</legend>
+                    <select class="form-control" id="ano" name="ano">
+                        <option value="1">1º ano</option>
+                        <option value="2">2º ano</option>
+                        <option value="3">3º ano</option>
+                        <option value="4">4º ano</option>
+                        <option value="5">5º ano</option>
+                        <option value="6">6º ano</option>
+                        <option value="7">7º ano</option>
+                        <option value="8">8º ano</option>
+                        <option value="9">9º ano</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Próxima etapa</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!-- fecha corpo da página-->
+    <!--footer-->
+    <footer>
+        <div id="footerContainer">
+            <div class="row" id="row_one">
+                <div class="col-sm-5" id="logosInst">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/ufc.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/virtual.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/proativa.png" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4"></div>
+
+                <div class="col-sm-3" id="logosSocialNetworks">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="https://www.facebook.com/proativaufc" target="_blank"><img
+                                    src="../img/footer/fb.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="https://www.instagram.com/proativa_ufc/" target="_blank"><img
+                                    src="../img/footer/ig.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/tt.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                </div>
+
+                <div class="col-sm-3" id="cccol">
+                    <div class="row">
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#"><img src="../img/footer/cc.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/buscaand.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <title>Novo Plano de Aula</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="../img/ico.gif">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/resultadobuscapc.css">
+    <link rel="stylesheet" type="text/css" href="../css/sweetalert2.min.css">
+</head>
+
+<body>
+    <!--cabecalho-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="athenanavbar">
+            <a id="logoNav" href="../index.html"><img src="../img/athena.png" id="logonav" /></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INÍCIO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../buscaandroid.html">PARA ANDROID</a>
+                            <a class="dropdown-item" href="../buscacomputador.html">PARA COMPUTADOR</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">PLANOS DE AULA</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="novoplanoform1.html">ENVIAR NOVO PLANO</a>
+							<a class="dropdown-item" href="buscasimples.html">BUSCAR POR PLANO</a>
+						</div>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apoio.html">MATERIAL DE APOIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../duvidas.html">DÚVIDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobre.html">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- abre corpo da página-->
+    <div id="containerContent">
+        <h1 class="titulo">CRIAR PLANO DE AULA</h1>
+
+        <form id="plano-form" style="width:70%; margin:auto;">
+            <div class="form-group row">
+                <label class="form-label" for="titulo">Título do plano de aula</label>
+                <input class="form-control" type="text" id="titulo" name="titulo">
+            </div>
+            <div class="form-group row">
+                <label class="form-label" for="autor">Autor do plano de aula</label>
+                <input class="form-control" type="text" id="autor" name="autor">
+            </div>
+            <div class="form-group row">
+                <label class="form-label" for="conteudo">Passo a passo do plano de aula</label>
+                <textarea class="form-control" id="conteudo" name="conteudo" rows="10"></textarea>
+            </div>
+
+            <div id="demais-dados-container"></div>
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!-- fecha corpo da página-->
+    <!--footer-->
+    <footer>
+        <div id="footerContainer">
+            <div class="row" id="row_one">
+                <div class="col-sm-5" id="logosInst">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/ufc.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/virtual.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/proativa.png" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4"></div>
+
+                <div class="col-sm-3" id="logosSocialNetworks">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="https://www.facebook.com/proativaufc" target="_blank"><img
+                                    src="../img/footer/fb.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="https://www.instagram.com/proativa_ufc/" target="_blank"><img
+                                    src="../img/footer/ig.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/tt.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                </div>
+
+                <div class="col-sm-3" id="cccol">
+                    <div class="row">
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#"><img src="../img/footer/cc.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var ddc = document.getElementById("demais-dados-container");
+        var urlString = window.location.href;
+        var url = new URL(urlString);
+        var ano = url.searchParams.get("ano");
+        var plataforma = url.searchParams.get("plataforma");
+        var disciplina = url.searchParams.get("disciplina");
+        var descritores = url.searchParams.getAll("descritor");
+        var recursos = url.searchParams.getAll("recurso");
+
+        function deuCerto(){
+            alert("Plano de aula criado!");
+            window.location.href = "buscasimples.html";
+        }
+
+        function gerarPlanoFormulario() {
+            var planoFormulario = new Object();
+            planoFormulario.id = 0;
+            planoFormulario.titulo = document.querySelector("#titulo").value;
+            planoFormulario.autor = document.querySelector("#autor").value;
+            planoFormulario.ano = parseInt(ano);
+            planoFormulario.conteudo = document.querySelector("#conteudo").value;
+            planoFormulario.plataforma = plataforma;
+            planoFormulario.idDisciplina = parseInt(disciplina);
+            planoFormulario.idDescritores = descritores;
+
+            var recursosArray = [];
+
+            for (i = 0; i < recursos.length; i++) {
+                var idRecursos = new Object();
+                idRecursos.recursoId = parseInt(recursos[i]);
+                idRecursos.recursoPlataforma = plataforma;
+
+                recursosArray.push(idRecursos);
+            }
+
+            planoFormulario.idRecursos = recursosArray;
+
+            return planoFormulario
+        }
+
+        function enviarForm() {
+            console.log(gerarPlanoFormulario());
+            fetch(BASE_URL+"/planosDeAula/salvar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json;charset=UTF-8",
+                },
+                body: JSON.stringify(gerarPlanoFormulario()),
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    deuCerto();
+                    console.log("Success:", data);
+                })
+                .catch((err) => {
+                    deuCerto();
+                    console.error("Error:", err);
+                });
+        }
+
+        let signupForm = document.getElementById('plano-form');
+        signupForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            enviarForm();
+        });
+    </script>
+</body>
+
+</html>

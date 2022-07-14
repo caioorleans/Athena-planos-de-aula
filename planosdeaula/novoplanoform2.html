@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <title>Novo Plano de Aula</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="../img/ico.gif">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/resultadobuscapc.css">
+    <link rel="stylesheet" type="text/css" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+</head>
+
+<body>
+    <!--cabecalho-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="athenanavbar">
+            <a id="logoNav" href="../index.html"><img src="../img/athena.png" id="logonav" /></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="buttonMobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INÍCIO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">RECURSOS</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../buscaandroid.html">PARA ANDROID</a>
+                            <a class="dropdown-item" href="../buscacomputador.html">PARA COMPUTADOR</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+						<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">PLANOS DE AULA</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="novoplanoform1.html">ENVIAR NOVO PLANO</a>
+							<a class="dropdown-item" href="buscasimples.html">BUSCAR POR PLANO</a>
+						</div>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apoio.html">MATERIAL DE APOIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../duvidas.html">DÚVIDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobre.html">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- abre corpo da página-->
+    <div id="containerContent">
+        <h1 class="titulo">CRIAR PLANO DE AULA</h1>
+
+        <form id="form-descritores" action="novoplanoform3.html" style="width:70%; margin:auto;">
+            <legend class="form-label">Descritores</legend>
+            <div id="descritores-container">
+
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Próxima etapa</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!-- fecha corpo da página-->
+    <!--footer-->
+    <footer>
+        <div id="footerContainer">
+            <div class="row" id="row_one">
+                <div class="col-sm-5" id="logosInst">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/ufc.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/virtual.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/proativa.png" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4"></div>
+
+                <div class="col-sm-3" id="logosSocialNetworks">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="https://www.facebook.com/proativaufc" target="_blank"><img
+                                    src="../img/footer/fb.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="https://www.instagram.com/proativa_ufc/" target="_blank"><img
+                                    src="../img/footer/ig.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="../img/footer/tt.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                </div>
+
+                <div class="col-sm-3" id="cccol">
+                    <div class="row">
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#"><img src="../img/footer/cc.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/buscaand.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var dc = document.getElementById("descritores-container");
+        var urlString = window.location.href;
+        var url = new URL(urlString);
+        var ano = url.searchParams.get("ano");
+        var plataforma = url.searchParams.get("plataforma");
+        var disciplina = url.searchParams.get("disciplina");
+    
+        var form = document.getElementById("form-descritores");
+    
+        const getDescritores = async () => {
+            const data = await fetch(BASE_URL + "/descritores/buscarPorDisciplina?id=" + disciplina)
+                .then((res) => res.json())
+                .catch(e => console.log(e));
+    
+            return data;
+        }
+    
+        const loadDescritores = async () => {
+            response = await getDescritores();
+            for (i = 0; i < response.length; i++) {
+                var checkbox = document.createElement('input');
+                checkbox.classList.add("form-check-input");
+                checkbox.type = 'checkbox';
+                checkbox.id = `descritor${i}`;
+                checkbox.name = 'descritor';
+                checkbox.value = `${response[i].id}`;
+                
+                var label = document.createElement('label');
+                label.classList.add("form-check-label");
+                label.htmlFor = `descritor${i}`;
+                label.appendChild(document.createTextNode(`${response[i].id} - ${response[i].descricao}`));
+    
+                var br = document.createElement('br');
+
+                var divCheck = document.createElement('div');
+                divCheck.classList.add("form-check");
+
+                divCheck.appendChild(checkbox);
+                divCheck.appendChild(label);
+    
+                dc.appendChild(divCheck);
+            }
+            var hidden1 = document.createElement('input');
+            hidden1.type = 'hidden';
+            hidden1.id = 'disciplina';
+            hidden1.name = 'disciplina';
+            hidden1.value = disciplina;
+    
+            form.appendChild(hidden1);
+    
+            var hidden2 = document.createElement('input');
+            hidden2.type = 'hidden';
+            hidden2.id = 'plataforma';
+            hidden2.name = 'plataforma';
+            hidden2.value = plataforma;
+    
+            form.appendChild(hidden2);
+    
+            var hidden3 = document.createElement('input');
+            hidden3.type = 'hidden';
+            hidden3.id = 'ano';
+            hidden3.name = 'ano';
+            hidden3.value = ano;
+    
+            form.appendChild(hidden3);
+        }
+    
+        loadDescritores();
+        var descritores = url.searchParams.getAll("descritor");
+        console.log(descritores);
+    
+    </script>
+</body>
+
+</html>
